@@ -1,0 +1,18 @@
+attrs @ file:///tmp/build/80754af9/attrs_1600298409949/work
+certifi==2020.6.20
+click==7.1.2
+Flask==1.1.2
+iniconfig @ file:///tmp/build/80754af9/iniconfig_1596827328212/work
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+more-itertools @ file:///tmp/build/80754af9/more-itertools_1598884071673/work
+packaging==20.4
+pluggy==0.13.1
+py @ file:///tmp/build/80754af9/py_1593446248552/work
+pyparsing==2.4.7
+pytest==0.0.0
+pytest-mock @ file:///tmp/build/80754af9/pytest-mock_1601659293662/work
+six==1.15.0
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+Werkzeug==1.0.1
