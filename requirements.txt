@@ -2,17 +2,17 @@ attrs==20.2.0
 certifi==2020.6.20
 click==7.1.2
 Flask==1.1.2
-iniconfig @ file:///tmp/build/80754af9/iniconfig_1596827328212/work
+iniconfig==1.0.1
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-more-itertools @ file:///tmp/build/80754af9/more-itertools_1598884071673/work
+more-itertools==8.5.0
 packaging==20.4
 pluggy==0.13.1
-py @ file:///tmp/build/80754af9/py_1593446248552/work
+py==1.9.0
 pyparsing==2.4.7
 pytest==0.0.0
-pytest-mock @ file:///tmp/build/80754af9/pytest-mock_1601659293662/work
+pytest-mock==3.3.1
 six==1.15.0
-toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+toml==0.10.1
 Werkzeug==1.0.1
