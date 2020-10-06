@@ -5,6 +5,9 @@ Simulate your own ATM with this api
 ## Installing
 `pip install -r requirements.txt`
 
+## Running unit tests
+`python -m pytest test/`
+
 ## Running for development
 `flask run`
 
