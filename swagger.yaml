@@ -1,0 +1,97 @@
+---
+swagger: "2.0"
+info:
+  title: ATM api in python
+
+host:
+  https://atm-api-python.herokuapp.com
+
+basePath:
+  /
+
+schemes:
+- "http"
+- "https"
+
+paths:
+ /reset:
+     post:
+       summary: Reset state before starting tests
+       responses:
+         "200":
+           description: OK
+           content:
+             text/plain:
+               schema:
+                 type: string
+                 example: OK
+       examples:
+         response:
+           value: Ok
+ /balance:
+     get:
+       summary: Get account balance
+       parameters:
+         - name: account_id
+           in: query
+           schema:
+             type: string
+       responses:
+         "200":
+           description: Account found
+           content:
+             text/plain:
+               schema:
+                 type: string
+                 example: "200"
+         "404":
+           description: Account not found
+           content:
+             text/plain:
+               schema:
+                 type: string
+                 example: "0"
+ /event:
+     post:
+       summary: Execute an event
+       parameters:
+        - in: body
+          name: event_object
+          description: The event to execute
+          schema:
+            type: object
+            required:
+              - type
+              - amount
+            properties:
+              type:
+                type: string
+              amount:
+                type: number
+              origin:
+                type: string
+              destination:
+                type: string
+       responses:
+         "201":
+           description: Event executed
+           content:
+             application/json:
+               schema:
+                 type: object
+                 properties:
+                   type:
+                     type: string
+                   amount:
+                     type: number
+                   origin:
+                     type: string
+                   destination:
+                     type: string
+         "404":
+           description: Account not found
+           content:
+             text/plain:
+               schema:
+                 type: string
+                 example: "0"
